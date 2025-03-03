@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.motostream.application",
+      "sha256_cert_fingerprints": ["4B:43:6A:ED:45:43:D5:86:12:3D:FE:D1:E3:BB:8C:75:24:11:90:B4:0B:19:94:D9:92:23:23:72:29:75:BD:14"]
+    }
+  }
+]
