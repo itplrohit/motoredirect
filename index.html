@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Link Redirect</title>
+    <script>
+        function redirectUser() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Check if the user is on iOS
+            if (/iPhone|iPad|iPod/i.test(userAgent)) {
+                window.location.href = "https://apps.apple.com/in/app/motostream/id6504409673";
+            } 
+            // Check if the user is on Android
+            else if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=app.motostream.application&hl=en_IN&pli=1";
+            } 
+            // Default: Open a fallback page or web version
+            else {
+                window.location.href = "https://www.motostream.com";  // Change this to your web URL
+            }
+        }
+    </script>
+</head>
+<body onload="redirectUser()">
+    <h1>Redirecting...</h1>
+</body>
+</html>
